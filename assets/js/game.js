@@ -8,20 +8,20 @@ var playerHealth = 100;
 var playerAttack = 10;
 
 var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
-console.log(enemyNames);
-console.log(enemyNames.length);
-for(var i = 0; i < enemyNames.length; i++) {
-  console.log(enemyNames[i]);
-  console.log(i);
-  console.log(enemyNames[i] + " is at " + i + " index");
-}
+
 var enemyHealth = 50;
 var enemyAttack = 12;
-var enemy1="Roborto";
-var enemy2="Amy Android";
-var enemy3="Robo Trumble";
 
 var playerMoney = 10;
+
+// console.log(enemyNames);
+// console.log(enemyNames.length);
+
+// for(var i = 0; i < enemyNames.length; i++) {
+//   console.log(enemyNames[i]);
+//   console.log(i);
+//   console.log(enemyNames[i] + " is at " + i + " index");
+// }
 
 var fight = function(enemyName){
     window.alert("Welcome to Robot Gladiators!")
@@ -71,4 +71,6 @@ else {
 }
 };
 
-// fight();
+for(var i=0; i < enemyNames.length; i++) {
+  fight(enemyNames[i]);
+}
